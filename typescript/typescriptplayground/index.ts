@@ -82,21 +82,21 @@ function drive(vehicle: Car | Motorcycle | Patinente): void {
 console.log("----- Ej 4 -------")
 
 
-function removeFirstEntry<T extends string|number>(arr: T[]): T[] {
-    return arr.splice(1);
-}
+// function removeFirstEntry<T extends string|number>(arr: T[]): T[] {
+//     return arr.splice(1);
+// }
 
 
-const strArray: string[] = ['Hello', 'World', 'Im', 'a', 'Full', 'Stack', 'Developer'];
-const numArray: number[] = [1, 2, 3, 4, 5, 6, 7];
-const mixedArray: Array<number|string> = ['Hello', 'I', 'have', 3, 'tasks'];
-const unsupportedArray = [{name: 'Lucas', surname: 'Fernandez'}, 'Hello', 22];
+// const strArray: string[] = ['Hello', 'World', 'Im', 'a', 'Full', 'Stack', 'Developer'];
+// const numArray: number[] = [1, 2, 3, 4, 5, 6, 7];
+// const mixedArray: Array<number|string> = ['Hello', 'I', 'have', 3, 'tasks'];
+// const unsupportedArray = [{name: 'Lucas', surname: 'Fernandez'}, 'Hello', 22];
 
-const newStrArray = removeFirstEntry(strArray);
-const newNumArray = removeFirstEntry(numArray);
-const newMixedArray = removeFirstEntry(mixedArray);
-//const newUnsupportedArray = removeFirstEntry(unsupportedArray); // --> will fail
+// const newStrArray = removeFirstEntry(strArray);
+// const newNumArray = removeFirstEntry(numArray);
+// const newMixedArray = removeFirstEntry(mixedArray);
+// //const newUnsupportedArray = removeFirstEntry(unsupportedArray); // --> will fail
 
-console.log(newStrArray); // --> ['World', 'Im', 'a', 'Full', 'Stack', 'Developer'];
-console.log(newNumArray); // --> [2, 3, 4, 5, 6, 7];
-console.log(newMixedArray); // --> ['I', 'have', 3, 'tasks'];
+// console.log(newStrArray); // --> ['World', 'Im', 'a', 'Full', 'Stack', 'Developer'];
+// console.log(newNumArray); // --> [2, 3, 4, 5, 6, 7];
+// console.log(newMixedArray); // --> ['I', 'have', 3, 'tasks'];
